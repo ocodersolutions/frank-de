@@ -1,12 +1,12 @@
 <svg width="402.6" height="87.6" xmlns="http://www.w3.org/2000/svg">
-
  <g>
   <title>background</title>
-  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+  <rect x="-1" y="-1" width="404.6" height="89.6" id="canvas_background" fill="none"/>
  </g>
+
  <g>
   <title>Layer 1</title>
-  <text font-weight="bold" stroke="#000" transform="matrix(1.5431499548602763,0,0,1.6492382626381081,-159.38266295720499,-7.917399054409117) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_32" y="28.300003" x="105.292317" stroke-width="0" fill="#ffffff">15 YEARS OF DIGITAL</text>
-  <text stroke="#000" transform="matrix(1.1951934099197388,0,0,1.192655086517334,-12.638773292303085,-15.78266591578722) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_33" y="75.300003" x="104.960852" stroke-width="0" fill="#ffffff">ARCHITECTURE</text>
+  <text font-weight="bold" stroke="#000" transform="matrix(2.2307652529573945,0,0,2.06601189990812,-215.458539283717,-15.990426164603734) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_1" y="26.300003" x="97.799988" stroke-opacity="null" stroke-width="0" fill="#ffffff">DIGITAL ENSOURCE</text>
+  <text stroke="#000" transform="matrix(1.1944920460731854,0,0,1.176068679740837,-27.550754824870484,-11.966343223003975) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_2" y="71.300003" x="59.799988" stroke-opacity="null" stroke-width="0" fill="#ffffff">THE MAIN SOURCE OF DIGITAL</text>
  </g>
 </svg>
