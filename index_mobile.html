@@ -1,11 +1,10 @@
-<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths android mobile portrait">
+<html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
     <title>DreamTeam Katarzyna Konkowska</title>
-    <script async="" src="//www.google-analytics.com/analytics.js"></script>
     <script>
         var mobile = 1;
         var tablet = 0;
@@ -29,23 +28,6 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="fonts.css">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-62457434-1', 'auto');
-        ga('send', 'pageview');
-    </script>
     <style type="text/css">
         .dg {
             /** Clear list styles */
@@ -390,6 +372,22 @@
         .dg .c .slider:hover .slider-fg {
             background: #44abda;
         }
+        #aboutName{
+          top: -85px;
+          left: -15px;
+        }
+        #aboutTitle{
+          display: none;
+        }
+        #contactTitle{
+          display: none;
+        }
+        #contactName{
+          display: none;
+        }
+        #contactLine{
+          display: none;
+        }
     </style>
 </head>
 <body class="mob">
@@ -452,10 +450,10 @@
             <div id="tN1">ABOUT</div>
         </div>
         <div id="txtN2" class="txtNavi">
-            <div id="tN2">STAGE DESIGN + TV</div>
+            <div id="tN2">DEVELOPMENT</div>
         </div>
         <div id="txtN3" class="txtNavi">
-            <div id="tN3">EVENTS + FAIRS</div>
+            <div id="tN3">MARKETING</div>
         </div>
         <div id="txtN4" class="txtNavi">
             <div id="tN4">CONTACT</div>
@@ -465,18 +463,18 @@
         <div id="txtOverN">
             <div id="txtOverN2">
                 <div id="txtB1" class="txtNavi nB">ABOUT</div>
-                <div id="txtB2" class="txtNavi nB">STAGE DESIGN + TV</div>
-                <div id="txtB3" class="txtNavi nB">EVENTS + FAIRS</div>
+                <div id="txtB2" class="txtNavi nB">DEVELOPMENT</div>
+                <div id="txtB3" class="txtNavi nB">MARKETING</div>
                 <div id="txtB4" class="txtNavi nB">CONTACT</div>
             </div>
         </div>
         <a id="roll1" href="about">
             <div class="naviBox"></div>
         </a>
-        <a id="roll2" href="stage_tv">
+        <a id="roll2" href="development">
             <div class="naviBox"></div>
         </a>
-        <a id="roll3" href="events_fairs">
+        <a id="roll3" href="marketing">
             <div class="naviBox"></div>
         </a>
         <a id="roll4" href="contact">
@@ -491,12 +489,12 @@
                 <div id="lineM2" class="mLine"></div>
                 <div id="lineM3" class="mLine"></div>
                 <div id="txtM1" class="mB">ABOUT</div>
-                <div id="txtM2" class="mB">STAGE DESIGN + TV</div>
-                <div id="txtM3" class="mB">EVENTS + FAIRS</div>
+                <div id="txtM2" class="mB">DEVELOPMENT</div>
+                <div id="txtM3" class="mB">MARKETING</div>
                 <div id="txtM4" class="mB">CONTACT</div>
                 <a id="rollM1" class="rollM" href="about" data-id="1" style="display: inline-block;"></a>
-                <a id="rollM2" class="rollM" href="stage_tv" data-id="2" style="display: inline-block;"></a>
-                <a id="rollM3" class="rollM" href="events_fairs" data-id="3" style="display: inline-block;"></a>
+                <a id="rollM2" class="rollM" href="development" data-id="2" style="display: inline-block;"></a>
+                <a id="rollM3" class="rollM" href="marketing" data-id="3" style="display: inline-block;"></a>
                 <a id="rollM4" class="rollM" href="contact" data-id="4" style="display: inline-block;"></a>
             </div>
         </div>
@@ -528,6 +526,6 @@
     <script type="text/javascript" src="lib/detector.min.js"></script>
     <script type="text/javascript" src="assets/assets.min.js"></script>
     <script type="text/javascript" src="js-min/projectsM.min.js"></script>
-    <script type="text/javascript" src="js-min/master.min.js"></script>
+    <script type="text/javascript" src="js-min/master.js"></script>
 </body>
 </html>

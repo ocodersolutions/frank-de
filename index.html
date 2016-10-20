@@ -3,9 +3,12 @@
 <head>
 	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 	<script type="text/javascript">
-		x = $(window).width();
-		if( x < 768) {
-			alert('mobi');
+
+		function isMobile() {
+		  try{ document.createEvent("TouchEvent"); return true; }
+		  catch(e){ return false; }
+		}
+		if (isMobile()) {
 		 	window.location = "/index_mobile.html";
 		}else{
 			window.location = "/index_desktop.html";

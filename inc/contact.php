@@ -67,8 +67,10 @@
 		<button id="submit" type="submit" >Submit</button> <img id="loading" style="width: 150px; 
     margin: -70px auto; display: none;" src="img/ajax-load.gif">
 	</form>
-	<p id="notice" style="text-align: center; display:none; color: #009688; font-family: 'GT-Walsheim-Medium';
+	<p id="success" class="notice" style="text-align: center; display:none; color: #009688; font-family: 'GT-Walsheim-Medium';
     font-size: 17px; "> Email Sent. Thanks for your contact !</p>
+    <p id="error" class="notice" style="text-align: center; display:none; color: red; font-family: 'GT-Walsheim-Medium';
+    font-size: 17px; "> An error occurred</p>
 
 
 
@@ -82,7 +84,7 @@
 </style>
 <div id="stageHolder" style="z-index: -9;">
 	
-	<div id="contactTitle" class="title-page" style="display: block;">Contact</div>
+	<div id="contactTitle" class="title-page">Contact</div>
 	<div id="projectsStageHolder"></div>
 	<div id="navigationProjects"></div>
 	<div id="navigationPhotos"></div>
@@ -91,6 +93,7 @@
 
 <script type="text/javascript">
 $( "form.contact-form" ).submit(function( event ) {
+	$('.notice').css('display','none');
 	$('#loading').css('display','block');
 	form = $(this).serialize();
 	$.ajax({
@@ -103,34 +106,36 @@ $( "form.contact-form" ).submit(function( event ) {
         success: function (result){
         	$('#loading').css('display','none');
         	if(result == 1){
-        		$('#notice').fadeIn();
+        		$('#success').fadeIn();
+        	}else{
+        		$('#error').fadeIn();
         	}
         }
     });
 	event.preventDefault();
 });
 
-$( document ).ready(function() {
-    $("#contactTitle").css('display', 'block');
-			var $all_msg = $('#contactTitle');
-			  //get a list of letters from the welcome text
-			  var $wordList = $('#contactTitle').text().split("");
-			  //clear the welcome text msg
-			  $('#contactTitle').text("");
-			  //loop through the letters in the $wordList array
-			  $.each($wordList, function(idx, elem) {
-			    //create a span for the letter and set opacity to 0
-			    var newEL = $("<span/>").text(elem).css({
-			      opacity: 0
-			    });
-			    //append it to the welcome message
-			    newEL.appendTo($all_msg);
-			    //set the delay on the animation for this element
-			    newEL.delay(idx * 70);
-			    //animate the opacity back to full 1
-			    newEL.animate({
-			      opacity: 1
-			    }, 1100);
-			  });
-});
+// $( document ).ready(function() {
+//     $("#contactTitle").css('display', 'block');
+// 			var $all_msg = $('#contactTitle');
+// 			  //get a list of letters from the welcome text
+// 			  var $wordList = $('#contactTitle').text().split("");
+// 			  //clear the welcome text msg
+// 			  $('#contactTitle').text("");
+// 			  //loop through the letters in the $wordList array
+// 			  $.each($wordList, function(idx, elem) {
+// 			    //create a span for the letter and set opacity to 0
+// 			    var newEL = $("<span/>").text(elem).css({
+// 			      opacity: 0
+// 			    });
+// 			    //append it to the welcome message
+// 			    newEL.appendTo($all_msg);
+// 			    //set the delay on the animation for this element
+// 			    newEL.delay(idx * 70);
+// 			    //animate the opacity back to full 1
+// 			    newEL.animate({
+// 			      opacity: 1
+// 			    }, 1100);
+// 			  });
+// });
 </script>

@@ -11,7 +11,7 @@
 </style>
 
 <div id="aboutHolder">
-	<div id="aboutTitle" class="title-page" style="display: block;">About</div>
+	<div id="aboutTitle" class="title-page">About</div>
 	<h1 id="headerAbout">About - Katarzyna Konkowska</h1>
 	<div id="aboutName">DIGITAL ENSOURCE</div>
 	<!--
@@ -27,27 +27,27 @@
 	<div id="navigationPhotos"></div>
 </div>
 <script type="text/javascript">
-$( document ).ready(function() {
-    $("#aboutTitle").css('display', 'block');
-			var $all_msg = $('#aboutTitle');
-			  //get a list of letters from the welcome text
-			  var $wordList = $('#aboutTitle').text().split("");
-			  //clear the welcome text msg
-			  $('#aboutTitle').text("");
-			  //loop through the letters in the $wordList array
-			  $.each($wordList, function(idx, elem) {
-			    //create a span for the letter and set opacity to 0
-			    var newEL = $("<span/>").text(elem).css({
-			      opacity: 0
-			    });
-			    //append it to the welcome message
-			    newEL.appendTo($all_msg);
-			    //set the delay on the animation for this element
-			    newEL.delay(idx * 70);
-			    //animate the opacity back to full 1
-			    newEL.animate({
-			      opacity: 1
-			    }, 1100);
-			  });
-});
+// $( document ).ready(function() {
+//     $("#aboutTitle").css('display', 'block');
+// 			var $all_msg = $('#aboutTitle');
+// 			  //get a list of letters from the welcome text
+// 			  var $wordList = $('#aboutTitle').text().split("");
+// 			  //clear the welcome text msg
+// 			  $('#aboutTitle').text("");
+// 			  //loop through the letters in the $wordList array
+// 			  $.each($wordList, function(idx, elem) {
+// 			    //create a span for the letter and set opacity to 0
+// 			    var newEL = $("<span/>").text(elem).css({
+// 			      opacity: 0
+// 			    });
+// 			    //append it to the welcome message
+// 			    newEL.appendTo($all_msg);
+// 			    //set the delay on the animation for this element
+// 			    newEL.delay(idx * 70);
+// 			    //animate the opacity back to full 1
+// 			    newEL.animate({
+// 			      opacity: 1
+// 			    }, 1100);
+// 			  });
+// });
 </script>
