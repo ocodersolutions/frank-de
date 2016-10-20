@@ -61,9 +61,9 @@
 
 
 	<form class="contact-form" method="post">
-		<input type="text" name="name" class="input-contact" align="center" placeholder="Full Name"/>
-		<input type="text" name="email" class="input-contact" align="center" placeholder="Email" />
-		<textarea class="input-contact" name="message" type="text" placeholder="Message" style="height:80px; width: 350px; display: block; margin: 0 auto;"></textarea>
+		<input required type="text" name="name" class="input-contact" align="center" placeholder="Full Name"/>
+		<input required type="email" name="email" class="input-contact" align="center" placeholder="Email" />
+		<textarea  required class="input-contact" name="message" type="text" placeholder="Message" style="height:80px; width: 350px; display: block; margin: 0 auto;"></textarea>
 		<button id="submit" type="submit" >Submit</button> <img id="loading" style="width: 150px; 
     margin: -70px auto; display: none;" src="img/ajax-load.gif">
 	</form>
