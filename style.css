@@ -49,7 +49,9 @@ a {
     color:#FFFFFF;
     text-decoration: none;
 }
-
+#v-mobile #mobileContent{
+	top: 165px!important;
+}
 #naviMain{
 	position:absolute;
 	overflow:hidden;
